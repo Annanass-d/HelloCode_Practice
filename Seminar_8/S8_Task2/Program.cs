@@ -16,14 +16,14 @@ else System.Console.WriteLine("Количество строк и столбцо
 
 int[,] Transpon(int[,] matrix)
 {
-    int row = matr.GetLength(0);
-    int col = matr.GetLength(1);
+    int row = matrix.GetLength(0);
+    int col = matrix.GetLength(1);
     int[,] newMatr = new int[row, col];
     for (int i = 0; i < row; i++)
     {
         for (int j = 0; j < col; j++)
         {
-            newMatr[i, j] = matr[j, i];
+            newMatr[i, j] = matrix[j, i];
         }
     }
     return newMatr;

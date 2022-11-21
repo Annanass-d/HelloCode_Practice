@@ -4,8 +4,7 @@
 int[,] matr = GetRandomMatrix(3,4);
 PrintMatrix(matr);
 System.Console.WriteLine();
-int[,] resultMatr = ChangeMatrStrings(matr);
-PrintMatrix(resultMatr);
+PrintMatrix(ChangeMatrStrings(matr));
 
 int[,] ChangeMatrStrings(int[,] matrix)
 {
